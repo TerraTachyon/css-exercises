@@ -26,3 +26,60 @@ body {
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
 }
+
+/* Solution */
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  font-weight: bold;
+  font-size: xx-large;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+  flex: 2 1 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  list-style-type: none;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 8px;
+}
+.sidebar {
+  display: flex;
+  flex-shrink: 0;
+}
+
+#text-boxes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 40px;
+  gap: 20px;
+}
+
+#text-boxes div {
+  width: 30%;
+  padding: 10px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
